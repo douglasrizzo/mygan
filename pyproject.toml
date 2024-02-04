@@ -1,0 +1,94 @@
+[project]
+authors = [
+    { name = "Douglas De Rizzo Meneghetti", email = "douglasrizzom@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+name = "mygan"
+version = "0.0.1"
+description = "Simple GANs implemented in PyTorch"
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.ruff]
+line-length = 120
+indent-width = 2
+preview = true
+
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "F",
+    "E",
+    "W",
+    "I",
+    "N",
+    "D",
+    "U",
+    "ANN",
+    "B",
+    "A",
+    "C4",
+    "EM",
+    "EXE",
+    "G",
+    "PIE",
+    "Q",
+    "RSE",
+    "RET",
+    "SLF",
+    "SIM",
+    "TCH",
+    "ARG",
+    "PTH",
+    "TD",
+    "PD",
+    "PLE",
+    "PLW",
+    "PLC",
+    "PLR01",
+    "PLR02",
+    "PLR04",
+    "PLR1",
+    "PLR2",
+    "PLR5",
+    "PLR6",
+    "TRY201",
+    "TRY400",
+    "FLY",
+    "NPY",
+    "PERF",
+    "FURB",
+    "RUF",
+]
+ignore = ["D100", "E111", "E114"]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"

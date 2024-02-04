@@ -1,0 +1,9 @@
+matplotlib
+numpy
+pre-commit
+pytorch-lightning
+rich
+torch
+torchvision
+tqdm
+wandb
