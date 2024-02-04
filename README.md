@@ -4,7 +4,7 @@ Implementations of DCGAN and WGAN in PyTorch.
 
 ## Usage
 
-Make sure you are already logged on to WandB, the scripts will create projects called "dcgan_mnist" or "wgan_celeba" for you to track progress.
+Make sure you are already logged on to WandB, the scripts will create projects called "wgan_celeba" for you to track progress.
 
 - Run `python -m mygan` to train a WGAN on CelebFaces.
 
